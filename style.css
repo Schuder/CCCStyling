@@ -1,0 +1,48 @@
+@font-face {
+    font-family: aleo-italic;
+    src: url("Aleo-Italic.otf");
+}
+
+@font-face {
+	font-family: museosans-bold;
+	src: url("MuseoSans_500-webfont.ttf");
+}
+
+body {
+	background: #ffce00; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #ffce00 34%, #f77a0c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(34%,#ffce00), color-stop(100%,#f77a0c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  #ffce00 34%,#f77a0c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  #ffce00 34%,#f77a0c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  #ffce00 34%,#f77a0c 100%); /* IE10+ */
+	background: linear-gradient(135deg,  #ffce00 34%,#f77a0c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffce00', endColorstr='#f77a0c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	
+	color: #003da7;
+	width: 900px;
+	height: calc(80vh);
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.title1 {
+	font-family: museosans-bold;
+	font-weight: bold;
+	font-size: 5em;
+	margin-top: 20vh;
+	margin-bottom: 100px;
+}
+
+.title2 {
+	font-family: aleo-italic;
+	font-size: 5em;
+	margin-bottom: 50px;
+	margin-top: 100px;
+}
+
+.subtitle1 {
+	color: white;
+	font-family: aleo-italic;
+	font-size: 2em;
+}
