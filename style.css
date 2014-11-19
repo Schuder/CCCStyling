@@ -8,41 +8,71 @@
 	src: url("MuseoSans_500-webfont.ttf");
 }
 
+@font-face {
+	font-family: segoe-script;
+	src: url("Segoe Script Regular.ttf");
+}
 body {
-	background: #ffce00; /* Old browsers */
-	background: -moz-linear-gradient(-45deg,  #ffce00 34%, #f77a0c 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(34%,#ffce00), color-stop(100%,#f77a0c)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(-45deg,  #ffce00 34%,#f77a0c 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(-45deg,  #ffce00 34%,#f77a0c 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(-45deg,  #ffce00 34%,#f77a0c 100%); /* IE10+ */
-	background: linear-gradient(135deg,  #ffce00 34%,#f77a0c 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffce00', endColorstr='#f77a0c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: #f66522;
+	background: -moz-linear-gradient(top, #f66522 0%, #fbd101 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #f66522), color-stop(100%, #fbd101));
+	background: -webkit-linear-gradient(top, #f66522 0%, #fbd101 100%);
+	background: -o-linear-gradient(top, #f66522 0%, #fbd101 100%);
+	background: -ms-linear-gradient(top, #f66522 0%, #fbd101 100%);
+	background: linear-gradient(to bottom, #f66522 0%, #fbd101 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f66522', endColorstr='#fbd101', GradientType=0 );
 	
 	color: #003da7;
 	width: 900px;
-	height: calc(80vh);
+	height: 100vh;
 	margin: 0 auto;
 	text-align: center;
+	
 }
 
+.display {
+	position: relative;
+  	top: 50%;
+  	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
 
 .title1 {
-	font-family: museosans-bold;
-	font-weight: bold;
-	font-size: 5em;
-	margin-top: 20vh;
-	margin-bottom: 100px;
+	color: white;
+	font-family: aleo-italic;
+	font-size: 8em;
+	margin-bottom: 35px;
 }
 
 .title2 {
-	font-family: aleo-italic;
-	font-size: 5em;
-	margin-bottom: 50px;
-	margin-top: 100px;
+	font-family: segoe-script;
+	font-size: 7em;
+	margin-top: 35px;
 }
 
 .subtitle1 {
 	color: white;
 	font-family: aleo-italic;
-	font-size: 2em;
+	font-size: 2.5em;
 }
+
+@media (max-height: 778px) {
+
+	.title1 {
+		font-size: 4.5em;
+		margin-bottom: 50px;
+	}
+	
+	.title2 {
+		font-size: 4.5em;
+		margin-top: 50px;
+	}
+	
+	.subtitle1 {
+		font-size: 2em;
+	}
+	
+}
+
+
